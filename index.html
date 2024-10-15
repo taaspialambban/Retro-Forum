@@ -4,10 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style/style.css">
+
+<style>
+    nav .dropdown{
+        display: none;
+        position: absolute;
+        height: 10px;
+    }
+
+    nav li:hover .dropdown{
+        display: block;
+    }
+</style>
 </head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+<body class="bg-white">
+    <header class="md:container md:mx-auto">
+        <nav class="flex justify-between items-center ">
+            <h2 class="text-4xl text-[#12132D] font-black">ReTro</h2>
+            
+            <div class="my-7">
+                <ul class="menu menu-horizontal rounded-box ">
+                    <li>
+                        <h2 class="dropdown">Home</h2>
+
+                        <i class="fa-solid fa-house"></i>
+                    </li>
+                    <li>
+                        <h2 class="dropdown">Edit</h2>
+                        <i class="fa-solid fa-pencil"></i>
+                    </li>
+                    <li>
+                        <h2 class="dropdown">people add</h2>
+                        <i class="fa-solid fa-user-plus"></i>
+                    </li>
+                    <li>
+                        <h2 class="dropdown">flag</h2>
+                        <i class="fa-regular fa-flag"></i>
+                    </li>
+                </ul>
+                
+                <button class="btn bg-green-300 border-none rounded-full text-white">Sign In</button>
+            </div>
+        </nav>
+    </header>
+    <main class="md:container md:mx-auto">
+        <!-- banner section -->
+         <section class="banner-section pt-32 bg-no-repeat bg-bottom max-h-screen bg-[url(../B9A6-Retro-Forum-main/images/bgbanner.png)] mt-7">
+            <div class=" -mt-20 gap-5 flex flex-col md:flex-row pb-14 mx-7 lg:mx-20">
+              <div class="space-y-3 lg:space-y-8 w[300px] lg:w-[633px]">
+                <h2 class="text-3xl lg:text-5xl font-semibold lg:font-black text-white">Welcome to the <span class="text-[#797DFC]">ReTro</span> Forum</h2>
+                <p class="text-2xl text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug!</p>
+                <div class=" rounded-3xl">
+                    <input type="text" placeholder="Search here anything" class="input input-bordered bg-white lg:w-full max-w-xs" />
+                    <button class="btn btn-accent text-white">Search</button>
+                </div>
+              </div>
+              <div class="Registered p-7  flex justify-between text-[#12132DCC] font-medium text-2xl div h-[300px] lg:h-[288px]  lg:w-[371px] rounded-3xl bg-white">
+               <div class="space-y-6">
+               
+                       <p> Registered Users</p> 
+                        <p>Forum </p>
+                        <p>Topics</p>
+                        <p>Replies</p>
+                  
+               </div>
+               <div class="space-y-6">
+               
+                <p> 01</p> 
+                 <p>05</p>
+                 <p>01</p>
+                 <p>01</p>
+           
+        </div>
+              </div>
+            </div>
+         </section>
+
+         <!-- Discuss section -->
+          <section class=" mt-20 ">
+            <h2 class="text-black text-center text-5xl font-black">Let’s Discuss</h2>
+            <p class="text-xl font-normal text-center text-[#12132D99] mx-auto my-8 w-[400px] lg:w-[691px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <div class="flex flex-col lg:flex-row gap-3 justify-between">
+                <!-- Kids Unaware -->
+                    <div id="kids-Unaware" class="w-[772px] flex bg-[#797DFC1A] rounded-3xl p-8 border-2 border-[#797DFC] h-[270px]">
+                    <!-- img -->
+                    <div></div>
+                    <!-- text -->
+                     <div class="space-y-4">
+                        <div class="flex justify-between text-[#12132DCC] text-xl font-medium">
+                            <p># Music</p>
+                            <p>Author : Awlad Hossain</p>
+                        </div>
+                        <h2 class="text-black text-xl font-bold">10 Kids Unaware of Their Halloween Costume</h2>
+                        <p class="text-[#12132D99] text-base font-normal">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
+                        <hr class="border border-dotted border-[#12132D40]">
+                        <div class="flex justify-between">
+                            <div class="flex space-x-5">
+                                <p>
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span>560</span>
+                                </p>
+                                <p>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>1,568</span>
+                                </p>
+                                <p>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>5 min</span>
+                                </p>
+                            </div>
+                            <button class="btn bg-gray-200 border-none"><i class="fa-regular fa-envelope-open text-green-600"></i></button>
+                        </div>
+                    </div>  
+                </div>
+                <!-- Model div -->
+                <div class="w-[374px] h-[465px] border-2 p-7 rounded-3xl bg-[#12132D0D]">
+                    <div class="flex justify-between">
+                        <h2 class="text-2xl font-bold text-black">Title</h2>
+                        <p class="text-[#12132D99] text-xl font-normal">Mark as read (4)</p>
+                    </div>
+                    <div class="mt-3 flex p-4 bg-white">
+                        <p class="text-base font-semibold text-black">10 Kids Unaware of Their Halloween Costume</p>
+                        <p class="flex justify-center items-center gap-2">
+                            <i class="fa-regular fa-eye"></i>
+                            <span>1,568</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- Join form -->
+           <section class="mt-20 bg-[#12132D] h-[600px] lg:h-[330px] rounded-3xl">
+            <div class="flex flex-col lg:flex-row px-10 lg:px-16 py-14 gap-6 lg:gap-3">
+                <div class="space-y-7">
+                    <h2 class="text-3xl font-black text-white">Join Our Forum</h2>
+                    <p class="text-xl font-normal text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+                    <button class="btn w-[235px] rounded-3xl text-2xl font-bold text-white btn-primary">Registered Now</button>
+                    
+                </div>
+                <div class=" w-[200px] lg:w-[388.79px]">
+                    <img class="w-full" src="B9A6-Retro-Forum-main/images/joinforum.png" alt="">
+                </div>
+            </div>
+           </section>
+
+           <!-- Latest Posts -->
+           <section class="mt-20">
+            <h2 class="text-black text-center text-5xl font-black">Latest Posts</h2>
+            <p class="text-xl font-normal text-center text-[#12132D99] mx-auto my-8 w-[400px] lg:w-[691px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <div class="grid grid-cols-2 lg:grid-cols-3">
+                <div class="w-[374px] space-y-5 p-5 rounded-3xl border-2 border-[#12132D26] h-[482px]">
+                    <div class="w-[326px] rounded-2xl h-[190px] bg-[#12132D0D]">
+    
+                    </div>
+                    <p class="text-base font-normal text[#12132D99] space-x-4">
+                        <i class="fa-solid fa-soap"></i>
+                        <span>29 January 2024</span>
+                    </p>
+                    <p class="text-lg text-black font-extrabold">What will a mars habitat force that impact in our daily life!!!</p>
+                    <p class="text-base font-normal text[#12132D99]">Yes, you can run unit tests and view the results directly within the app. </p>
+                    <div class="flex justify-between">
+                        <img src="" alt="">
+                       <div>
+                        <h2 class="text-base font-bold text-black">Cameron Williamson</h2>
+                        <h6 class="text-[#12132D99] text-base font-normal">Unknown</h6>
+                       </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+    </main>
+    <footer class="w-[400px] lg:w-[1140px] h-[350px] lg:h-[300px] space-y-5 lg:mx-auto px-4 lg:px-24 py-10 mt-20 text-center bg-gradient-to-r from-[#12132D0D] to-[#12132D00]">
+        <h3 class="text-4xl font-black text-black">ReTro</h3>
+        <p class="w-[200px] lg:w-[570px] mx-auto text-base font-normal text-[#12132DB3]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+        <div class="flex justify-center space-x-4 text-black">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <hr>
+        <p>2017, All Rights Reserved.</p>
+    </footer>
+    <script src="js/retro.js"></script>
 </body>
 </html>

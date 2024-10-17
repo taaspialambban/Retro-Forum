@@ -60,8 +60,8 @@
                 <h2 class="text-3xl lg:text-5xl font-semibold lg:font-black text-white">Welcome to the <span class="text-[#797DFC]">ReTro</span> Forum</h2>
                 <p class="text-2xl text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug!</p>
                 <div class=" rounded-3xl">
-                    <input type="text" placeholder="Search here anything" class="input input-bordered bg-white lg:w-full max-w-xs" />
-                    <button class="btn btn-accent text-white">Search</button>
+                    <input id="search-field-id" type="text" placeholder="Search here anything" class="input input-bordered bg-white lg:w-full max-w-xs" />
+                    <button onclick="handlearFunction()" class="btn btn-accent text-white">Search</button>
                 </div>
               </div>
               <div class="Registered p-7  flex justify-between text-[#12132DCC] font-medium text-2xl div h-[300px] lg:h-[288px]  lg:w-[371px] rounded-3xl bg-white">
@@ -89,51 +89,24 @@
           <section class=" mt-20 ">
             <h2 class="text-black text-center text-5xl font-black">Let’s Discuss</h2>
             <p class="text-xl font-normal text-center text-[#12132D99] mx-auto my-8 w-[400px] lg:w-[691px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <div id="loadding_spainer" class="flex justify-center items-center hidden"><span class="loading loading-dots loading-md"></span></div>
             <div class="flex flex-col lg:flex-row gap-3 justify-between">
                 <!-- Kids Unaware -->
-                    <div id="kids-Unaware" class="w-[772px] flex bg-[#797DFC1A] rounded-3xl p-8 border-2 border-[#797DFC] h-[270px]">
-                    <!-- img -->
-                    <div></div>
-                    <!-- text -->
-                     <div class="space-y-4">
-                        <div class="flex justify-between text-[#12132DCC] text-xl font-medium">
-                            <p># Music</p>
-                            <p>Author : Awlad Hossain</p>
-                        </div>
-                        <h2 class="text-black text-xl font-bold">10 Kids Unaware of Their Halloween Costume</h2>
-                        <p class="text-[#12132D99] text-base font-normal">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
-                        <hr class="border border-dotted border-[#12132D40]">
-                        <div class="flex justify-between">
-                            <div class="flex space-x-5">
-                                <p>
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <span>560</span>
-                                </p>
-                                <p>
-                                    <i class="fa-regular fa-eye"></i>
-                                    <span>1,568</span>
-                                </p>
-                                <p>
-                                    <i class="fa-regular fa-clock"></i>
-                                    <span>5 min</span>
-                                </p>
-                            </div>
-                            <button class="btn bg-gray-200 border-none"><i class="fa-regular fa-envelope-open text-green-600"></i></button>
-                        </div>
-                    </div>  
-                </div>
+                    <div id="kids-Unaware">
+                         
+                    </div>
                 <!-- Model div -->
                 <div class="w-[374px] h-[465px] border-2 p-7 rounded-3xl bg-[#12132D0D]">
                     <div class="flex justify-between">
                         <h2 class="text-2xl font-bold text-black">Title</h2>
                         <p class="text-[#12132D99] text-xl font-normal">Mark as read (4)</p>
                     </div>
-                    <div class="mt-3 flex p-4 bg-white">
-                        <p class="text-base font-semibold text-black">10 Kids Unaware of Their Halloween Costume</p>
+                    <div id="Card-container" class="">
+                        <!-- <p class="text-base font-semibold text-black">10 Kids Unaware of Their Halloween Costume</p>
                         <p class="flex justify-center items-center gap-2">
                             <i class="fa-regular fa-eye"></i>
                             <span>1,568</span>
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -158,8 +131,8 @@
            <section class="mt-20">
             <h2 class="text-black text-center text-5xl font-black">Latest Posts</h2>
             <p class="text-xl font-normal text-center text-[#12132D99] mx-auto my-8 w-[400px] lg:w-[691px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            <div class="grid grid-cols-2 lg:grid-cols-3">
-                <div class="w-[374px] space-y-5 p-5 rounded-3xl border-2 border-[#12132D26] h-[482px]">
+            <div id="latestPost" class="grid grid-cols-2 space-x-5 lg:grid-cols-3">
+                <!-- <div class="w-[374px] space-y-5 p-5 rounded-3xl border-2 border-[#12132D26] h-[482px]">
                     <div class="w-[326px] rounded-2xl h-[190px] bg-[#12132D0D]">
     
                     </div>
@@ -176,7 +149,8 @@
                         <h6 class="text-[#12132D99] text-base font-normal">Unknown</h6>
                        </div>
                     </div>
-                </div>
+                </div> -->
+                
             </div>
            </section>
     </main>
